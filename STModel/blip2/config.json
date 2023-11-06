@@ -1,0 +1,34 @@
+{
+  "_name_or_path": "THUDM/chatglm2_6b",
+  "model_type": "blip-2-ST",
+  "architectures": [
+    "Blip2Model4ST"
+  ],
+  
+  "auto_map": {
+    "AutoConfig": "configuration_blip2.Blip2STConfig",
+    "AutoModel": "myblip2.Blip2Model4ST"
+  },
+
+  "qformer_config" : {
+    "hidden_size" : 128,
+    "num_hidden_layers" : 1,
+    "num_attention_heads" : 2,
+    "intermediate_size" : 512,
+    "hidden_act" : "gelu",
+    "hidden_dropout_prob" : 0.1,
+    "attention_probs_dropout_prob" : 0.1,
+    "max_position_embeddings" : 512,
+    "initializer_range" : 0.02,
+    "layer_norm_eps" : 1e-12,
+    "pad_token_id" : 0,
+    "position_embedding_type" : "absolute",
+    "classifier_dropout" : null,
+    "cross_attention_frequency" : 1,
+    "st_encoder_hidden_size" : 128,
+    "text_encoder_hidden_size" : 4096
+  },
+  "query_token_nums" : 32,
+  "transformers_version" : "4.30.2",
+  "torch_dtype": "float16"
+}

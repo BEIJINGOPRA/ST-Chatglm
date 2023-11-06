@@ -1,0 +1,14 @@
+{
+  "_name_or_path": "/home/yuxie/ChatGLM2_6B/STModel",
+  "model_type": "stmodel",
+  "architectures": [
+    "ChatGLMForSTTraining"
+  ],
+  "auto_map": {
+    "AutoConfig": "configuration_stmodel.ChatGLM4STConfig",
+    "AutoModel": "modeling_stmodel.ChatGLMForSTTraining"
+  },
+  "max_source_length" : 64,
+  "transformers_version" : "4.30.2",
+  "torch_dtype" : "float16"
+}
